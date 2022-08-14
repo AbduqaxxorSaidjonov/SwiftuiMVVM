@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		769FEEFA28A7712800D620E9 /* SwiftuiMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEEF928A7712800D620E9 /* SwiftuiMVVMApp.swift */; };
-		769FEEFC28A7712800D620E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEEFB28A7712800D620E9 /* ContentView.swift */; };
 		769FEEFE28A7712800D620E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769FEEFD28A7712800D620E9 /* Assets.xcassets */; };
 		769FEF0128A7712800D620E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769FEF0028A7712800D620E9 /* Preview Assets.xcassets */; };
 		769FEF0328A7712800D620E9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF0228A7712800D620E9 /* Persistence.swift */; };
@@ -16,6 +15,16 @@
 		769FEF1028A7712800D620E9 /* SwiftuiMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF0F28A7712800D620E9 /* SwiftuiMVVMTests.swift */; };
 		769FEF1A28A7712800D620E9 /* SwiftuiMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF1928A7712800D620E9 /* SwiftuiMVVMUITests.swift */; };
 		769FEF1C28A7712800D620E9 /* SwiftuiMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF1B28A7712800D620E9 /* SwiftuiMVVMUITestsLaunchTests.swift */; };
+		769FEF2D28A771B200D620E9 /* HomeViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF2C28A771B200D620E9 /* HomeViewScreen.swift */; };
+		769FEF3328A774A000D620E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 769FEF3228A774A000D620E9 /* Alamofire */; };
+		769FEF3628A7758900D620E9 /* AFHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF3528A7758900D620E9 /* AFHttp.swift */; };
+		769FEF3928A775F600D620E9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF3828A775F600D620E9 /* Post.swift */; };
+		769FEF3C28A776D800D620E9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF3B28A776D800D620E9 /* HomeViewModel.swift */; };
+		769FEF3E28A7795400D620E9 /* CreateViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF3D28A7795400D620E9 /* CreateViewScreen.swift */; };
+		769FEF4028A7796C00D620E9 /* EditViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF3F28A7796C00D620E9 /* EditViewScreen.swift */; };
+		769FEF4328A77A3000D620E9 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF4228A77A3000D620E9 /* PostCell.swift */; };
+		769FEF4628A79E5500D620E9 /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FEF4528A79E5500D620E9 /* EditViewModel.swift */; };
+		76FAAD0B28A9515900E0E34D /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FAAD0A28A9515900E0E34D /* CreateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +47,6 @@
 /* Begin PBXFileReference section */
 		769FEEF628A7712800D620E9 /* SwiftuiMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftuiMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		769FEEF928A7712800D620E9 /* SwiftuiMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiMVVMApp.swift; sourceTree = "<group>"; };
-		769FEEFB28A7712800D620E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		769FEEFD28A7712800D620E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		769FEF0028A7712800D620E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		769FEF0228A7712800D620E9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +56,15 @@
 		769FEF1528A7712800D620E9 /* SwiftuiMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftuiMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		769FEF1928A7712800D620E9 /* SwiftuiMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiMVVMUITests.swift; sourceTree = "<group>"; };
 		769FEF1B28A7712800D620E9 /* SwiftuiMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		769FEF2C28A771B200D620E9 /* HomeViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewScreen.swift; sourceTree = "<group>"; };
+		769FEF3528A7758900D620E9 /* AFHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHttp.swift; sourceTree = "<group>"; };
+		769FEF3828A775F600D620E9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		769FEF3B28A776D800D620E9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		769FEF3D28A7795400D620E9 /* CreateViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewScreen.swift; sourceTree = "<group>"; };
+		769FEF3F28A7796C00D620E9 /* EditViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewScreen.swift; sourceTree = "<group>"; };
+		769FEF4228A77A3000D620E9 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		769FEF4528A79E5500D620E9 /* EditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
+		76FAAD0A28A9515900E0E34D /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769FEF3328A774A000D620E9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,10 +116,12 @@
 		769FEEF828A7712800D620E9 /* SwiftuiMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				769FEF2928A7717900D620E9 /* screens */,
+				769FEF3428A7757800D620E9 /* network */,
+				769FEF3728A775EA00D620E9 /* model */,
+				769FEF4128A77A2200D620E9 /* cell */,
 				769FEEF928A7712800D620E9 /* SwiftuiMVVMApp.swift */,
-				769FEEFB28A7712800D620E9 /* ContentView.swift */,
-				769FEEFD28A7712800D620E9 /* Assets.xcassets */,
-				769FEF0228A7712800D620E9 /* Persistence.swift */,
+				769FEF2828A7715100D620E9 /* apputils */,
 				769FEF0428A7712800D620E9 /* SwiftuiMVVM.xcdatamodeld */,
 				769FEEFF28A7712800D620E9 /* Preview Content */,
 			);
@@ -133,6 +153,100 @@
 			path = SwiftuiMVVMUITests;
 			sourceTree = "<group>";
 		};
+		769FEF2828A7715100D620E9 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				769FEEFD28A7712800D620E9 /* Assets.xcassets */,
+				769FEF0228A7712800D620E9 /* Persistence.swift */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		769FEF2928A7717900D620E9 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				769FEF2E28A7720A00D620E9 /* home */,
+				769FEF2F28A7721100D620E9 /* edit */,
+				769FEF3028A7721C00D620E9 /* create */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		769FEF2E28A7720A00D620E9 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				769FEF3A28A776C800D620E9 /* viewmodel */,
+				769FEF2C28A771B200D620E9 /* HomeViewScreen.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		769FEF2F28A7721100D620E9 /* edit */ = {
+			isa = PBXGroup;
+			children = (
+				769FEF4428A79E4400D620E9 /* viewmodel */,
+				769FEF3F28A7796C00D620E9 /* EditViewScreen.swift */,
+			);
+			path = edit;
+			sourceTree = "<group>";
+		};
+		769FEF3028A7721C00D620E9 /* create */ = {
+			isa = PBXGroup;
+			children = (
+				76FAAD0928A9514200E0E34D /* viewmodel */,
+				769FEF3D28A7795400D620E9 /* CreateViewScreen.swift */,
+			);
+			path = create;
+			sourceTree = "<group>";
+		};
+		769FEF3428A7757800D620E9 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				769FEF3528A7758900D620E9 /* AFHttp.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		769FEF3728A775EA00D620E9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				769FEF3828A775F600D620E9 /* Post.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		769FEF3A28A776C800D620E9 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				769FEF3B28A776D800D620E9 /* HomeViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		769FEF4128A77A2200D620E9 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				769FEF4228A77A3000D620E9 /* PostCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		769FEF4428A79E4400D620E9 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				769FEF4528A79E5500D620E9 /* EditViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		76FAAD0928A9514200E0E34D /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				76FAAD0A28A9515900E0E34D /* CreateViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +263,9 @@
 			dependencies = (
 			);
 			name = SwiftuiMVVM;
+			packageProductDependencies = (
+				769FEF3228A774A000D620E9 /* Alamofire */,
+			);
 			productName = SwiftuiMVVM;
 			productReference = 769FEEF628A7712800D620E9 /* SwiftuiMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +338,9 @@
 				Base,
 			);
 			mainGroup = 769FEEED28A7712700D620E9;
+			packageReferences = (
+				769FEF3128A774A000D620E9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 769FEEF728A7712800D620E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,10 +383,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FAAD0B28A9515900E0E34D /* CreateViewModel.swift in Sources */,
+				769FEF3E28A7795400D620E9 /* CreateViewScreen.swift in Sources */,
+				769FEF3628A7758900D620E9 /* AFHttp.swift in Sources */,
 				769FEF0328A7712800D620E9 /* Persistence.swift in Sources */,
+				769FEF3C28A776D800D620E9 /* HomeViewModel.swift in Sources */,
 				769FEF0628A7712800D620E9 /* SwiftuiMVVM.xcdatamodeld in Sources */,
-				769FEEFC28A7712800D620E9 /* ContentView.swift in Sources */,
+				769FEF3928A775F600D620E9 /* Post.swift in Sources */,
 				769FEEFA28A7712800D620E9 /* SwiftuiMVVMApp.swift in Sources */,
+				769FEF2D28A771B200D620E9 /* HomeViewScreen.swift in Sources */,
+				769FEF4628A79E5500D620E9 /* EditViewModel.swift in Sources */,
+				769FEF4028A7796C00D620E9 /* EditViewScreen.swift in Sources */,
+				769FEF4328A77A3000D620E9 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +713,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		769FEF3128A774A000D620E9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		769FEF3228A774A000D620E9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 769FEF3128A774A000D620E9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		769FEF0428A7712800D620E9 /* SwiftuiMVVM.xcdatamodeld */ = {
